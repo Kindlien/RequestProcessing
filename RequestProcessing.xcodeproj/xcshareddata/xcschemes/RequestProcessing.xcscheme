@@ -30,11 +30,8 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:RequestProcessing.xctestplan"
+            reference = "container:RequestProcessingTest.xctestplan"
             default = "YES">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:RequestProcessingTest.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>
