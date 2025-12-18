@@ -20,7 +20,6 @@ struct SlideToApproveButton: View {
     @State private var offset: CGFloat = 0
     @State private var isDragging = false
     @State private var hasCompleted = false
-    @State private var showCheckmark = false
     @State private var lastUpdateTime: TimeInterval = 0
 
     private let thumbSize: CGFloat = 48
@@ -223,24 +222,13 @@ struct SlideToApproveButton: View {
             offset = 0
             isDragging = false
             hasCompleted = false
-            showCheckmark = false
             lastUpdateTime = 0
         }
         .onDisappear {
             offset = 0
             isDragging = false
             hasCompleted = false
-            showCheckmark = false
             lastUpdateTime = 0
-        }
-        .onChange(of: result) { newResult in
-            if case .success(.approve) = newResult {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    withAnimation {
-                        showCheckmark = true
-                    }
-                }
-            }
         }
         .onChange(of: isLoading) { loading in
             if !loading && !hasCompleted && offset > 0 {

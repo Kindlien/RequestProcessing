@@ -69,7 +69,7 @@ struct RequestDetailView: View {
 
                 Spacer()
 
-                HStack(spacing: 0) {
+                HStack(spacing: 27) {
 
                     Button {
                         guard !interactionLocked && allowInteraction else { return }
@@ -131,8 +131,6 @@ struct RequestDetailView: View {
                     .animation(.spring(response: 0.3, dampingFraction: 0.7),
                                value: interactionLocked)
                     .animation(.easeInOut(duration: 0.3), value: allowInteraction)
-
-                    Spacer()
 
                     SlideToApproveButton(
                         isLoading: viewModel.isLoading,
