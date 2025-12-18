@@ -1,23 +1,18 @@
 {
   "configurations" : [
     {
-      "id" : "99F0165F-F2D0-4C1D-B662-16F8A2D931A4",
-      "name" : "Test Scheme Action",
+      "id" : "B26CA7C2-CC04-47F2-9B20-2BFE8818C45E",
+      "name" : "Configuration 1",
       "options" : {
 
       }
     }
   ],
   "defaultOptions" : {
-    "targetForVariableExpansion" : {
-      "containerPath" : "container:RequestProcessing.xcodeproj",
-      "identifier" : "8FB04C6C2EF25EF300310EEE",
-      "name" : "RequestProcessing"
-    }
+    "testTimeoutsEnabled" : true
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:RequestProcessing.xcodeproj",
         "identifier" : "8FB04C7C2EF25EF600310EEE",

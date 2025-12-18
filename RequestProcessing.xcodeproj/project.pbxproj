@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F6675FD2EF3F57100FCB046 /* RequestProcessingTest.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 8F6675FC2EF3F57100FCB046 /* RequestProcessingTest.xctestplan */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8FB04C7E2EF25EF600310EEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -17,18 +21,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F6675FC2EF3F57100FCB046 /* RequestProcessingTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RequestProcessingTest.xctestplan; sourceTree = "<group>"; };
 		8FB04C6D2EF25EF300310EEE /* RequestProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RequestProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB04C7D2EF25EF600310EEE /* RequestProcessingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RequestProcessingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8F6675AE2EF39E7200FCB046 /* Exceptions for "RequestProcessingTests" folder in "RequestProcessingTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				TestPlan/RequestProcessing.xctestplan,
-			);
-			target = 8FB04C7C2EF25EF600310EEE /* RequestProcessingTests */;
-		};
 		8FB04CA12EF29CC800310EEE /* Exceptions for "RequestProcessing" folder in "RequestProcessing" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -49,9 +47,6 @@
 		};
 		8FB04C802EF25EF600310EEE /* RequestProcessingTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				8F6675AE2EF39E7200FCB046 /* Exceptions for "RequestProcessingTests" folder in "RequestProcessingTests" target */,
-			);
 			path = RequestProcessingTests;
 			sourceTree = "<group>";
 		};
@@ -78,6 +73,7 @@
 		8FB04C642EF25EF300310EEE = {
 			isa = PBXGroup;
 			children = (
+				8F6675FC2EF3F57100FCB046 /* RequestProcessingTest.xctestplan */,
 				8FB04C6F2EF25EF300310EEE /* RequestProcessing */,
 				8FB04C802EF25EF600310EEE /* RequestProcessingTests */,
 				8FB04C6E2EF25EF300310EEE /* Products */,
@@ -185,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6675FD2EF3F57100FCB046 /* RequestProcessingTest.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

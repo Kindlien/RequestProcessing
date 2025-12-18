@@ -33,6 +33,9 @@
             reference = "container:RequestProcessing.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:RequestProcessingTest.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
