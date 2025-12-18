@@ -168,12 +168,14 @@ struct RequestDetailView: View {
                 .offset(y: showContent ? 0 : 30)
             }
             .blur(radius: viewModel.isLoading ? 4 : 0)
-
-            if viewModel.isLoading {
-                ProcessingOverlayView()
-                    .transition(.opacity)
-                    .zIndex(1)
-            }
+            .overlay(
+                Group {
+                    if viewModel.isLoading {
+                        ProcessingOverlayView()
+                            .transition(.opacity)
+                    }
+                }
+            )
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
