@@ -171,6 +171,8 @@ struct RequestDetailView: View {
 
             if viewModel.isLoading {
                 ProcessingOverlayView()
+                    .transition(.opacity)
+                    .zIndex(1)
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -199,8 +201,10 @@ struct RequestDetailView: View {
             }
         }
         .onChange(of: viewModel.isLoading) { loading in
-            if loading {
-                interactionLocked = true
+            withAnimation(.easeInOut(duration: 0.3)) {
+                if loading {
+                    interactionLocked = true
+                }
             }
         }
     }

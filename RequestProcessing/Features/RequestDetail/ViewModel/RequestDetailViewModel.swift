@@ -24,7 +24,9 @@ class RequestDetailViewModel: ObservableObject {
     }
 
     func approve() async {
-        isLoading = true
+        withAnimation(.easeInOut(duration: 0.3)) {
+            isLoading = true
+        }
         errorMessage = nil
 
         do {
@@ -36,11 +38,15 @@ class RequestDetailViewModel: ObservableObject {
             self.result = .failure(error.localizedDescription)
         }
 
-        isLoading = false
+        withAnimation(.easeInOut(duration: 0.3)) {
+            isLoading = false
+        }
     }
 
     func reject() async {
-        isLoading = true
+        withAnimation(.easeInOut(duration: 0.3)) {
+            isLoading = true
+        }
         errorMessage = nil
 
         do {
@@ -52,7 +58,9 @@ class RequestDetailViewModel: ObservableObject {
             self.result = .failure(error.localizedDescription)
         }
 
-        isLoading = false
+        withAnimation(.easeInOut(duration: 0.3)) {
+            isLoading = false
+        }
     }
 
     func markSlideComplete() {
